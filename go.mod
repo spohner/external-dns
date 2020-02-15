@@ -54,6 +54,7 @@ require (
 	gopkg.in/yaml.v2 v2.2.4
 	istio.io/api v0.0.0-20190820204432-483f2547d882
 	istio.io/istio v0.0.0-20190322063008-2b1331886076
+	istio.io/pkg v0.0.0-20190731230704-fcbac27d69d5
 	k8s.io/api v0.0.0-20190620084959-7cf5895f2711
 	k8s.io/apimachinery v0.0.0-20190612205821-1799e75a0719
 	k8s.io/client-go v10.0.0+incompatible

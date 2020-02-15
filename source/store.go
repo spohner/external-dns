@@ -159,6 +159,12 @@ func BuildWithConfig(source string, p ClientGenerator, cfg *Config) (Source, err
 			return nil, err
 		}
 		return NewNodeSource(client, cfg.AnnotationFilter, cfg.FQDNTemplate)
+	case "namespace":
+		client, err := p.KubeClient()
+		if err != nil {
+			return nil, err
+		}
+		return newNamespaceSource(client)
 	case "service":
 		client, err := p.KubeClient()
 		if err != nil {
